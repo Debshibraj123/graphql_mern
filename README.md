@@ -1,1 +1,1 @@
-##mern stack project using graphql
+mern stack project using graphql
