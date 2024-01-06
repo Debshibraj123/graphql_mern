@@ -106,7 +106,7 @@ const mutation = new GraphQLObjectType({
           });
         });
 
-        return Client.findByIdAndRemove(args.id);
+        return Client.findByIdAndDelete(args.id);
       },
     },
     // Add a project
@@ -146,7 +146,7 @@ const mutation = new GraphQLObjectType({
         id: { type: GraphQLNonNull(GraphQLID) },
       },
       resolve(parent, args) {
-        return Project.findByIdAndRemove(args.id);
+        return Project.findByIdAndDelete(args.id);
       },
     },
     // Update a project
